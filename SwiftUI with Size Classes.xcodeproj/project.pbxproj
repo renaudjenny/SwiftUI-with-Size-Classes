@@ -13,6 +13,7 @@
 		4C940E6D23E571EC00DCD4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C940E6C23E571EC00DCD4AB /* Assets.xcassets */; };
 		4C940E7023E571EC00DCD4AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C940E6F23E571EC00DCD4AB /* Preview Assets.xcassets */; };
 		4C940E7323E571EC00DCD4AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C940E7123E571EC00DCD4AB /* LaunchScreen.storyboard */; };
+		4CDB166F23E5B0EA002878C6 /* CubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB166E23E5B0EA002878C6 /* CubeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		4C940E6F23E571EC00DCD4AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C940E7223E571EC00DCD4AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C940E7423E571EC00DCD4AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C940E7A23E5723600DCD4AB /* SwiftUI with Size Classes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI with Size Classes.entitlements"; sourceTree = "<group>"; };
+		4CDB166E23E5B0EA002878C6 /* CubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +60,14 @@
 			isa = PBXGroup;
 			children = (
 				4C940E6623E571E500DCD4AB /* AppDelegate.swift */,
-				4C940E6823E571E500DCD4AB /* SceneDelegate.swift */,
-				4C940E6A23E571E500DCD4AB /* ContentView.swift */,
 				4C940E6C23E571EC00DCD4AB /* Assets.xcassets */,
-				4C940E7123E571EC00DCD4AB /* LaunchScreen.storyboard */,
+				4C940E6A23E571E500DCD4AB /* ContentView.swift */,
+				4CDB166E23E5B0EA002878C6 /* CubeView.swift */,
 				4C940E7423E571EC00DCD4AB /* Info.plist */,
+				4C940E7123E571EC00DCD4AB /* LaunchScreen.storyboard */,
 				4C940E6E23E571EC00DCD4AB /* Preview Content */,
+				4C940E6823E571E500DCD4AB /* SceneDelegate.swift */,
+				4C940E7A23E5723600DCD4AB /* SwiftUI with Size Classes.entitlements */,
 			);
 			path = "SwiftUI with Size Classes";
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				4C940E6723E571E500DCD4AB /* AppDelegate.swift in Sources */,
 				4C940E6923E571E500DCD4AB /* SceneDelegate.swift in Sources */,
 				4C940E6B23E571E500DCD4AB /* ContentView.swift in Sources */,
+				4CDB166F23E5B0EA002878C6 /* CubeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI with Size Classes/SwiftUI with Size Classes.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI with Size Classes/Preview Content\"";
 				DEVELOPMENT_TEAM = MBQ98GC8JT;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "renaud.jenny.SwiftUI-with-Size-Classes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI with Size Classes/SwiftUI with Size Classes.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI with Size Classes/Preview Content\"";
 				DEVELOPMENT_TEAM = MBQ98GC8JT;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "renaud.jenny.SwiftUI-with-Size-Classes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
