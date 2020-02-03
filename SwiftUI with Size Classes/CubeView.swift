@@ -15,9 +15,9 @@ struct CubeView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                CubeShape(deep: self.squareWidth(geometry)/6)
+                CubeShape(depth: self.squareWidth(geometry)/6)
                     .fill(self.color)
-                    .overlay(CubeShape(deep: self.squareWidth(geometry)/6)
+                    .overlay(CubeShape(depth: self.squareWidth(geometry)/6)
                         .stroke())
                     .frame(width: self.squareWidth(geometry), height: self.squareWidth(geometry))
                 Text(String(self.letter))
@@ -34,13 +34,13 @@ struct CubeView: View {
 }
 
 struct CubeShape: Shape {
-    let deep: CGFloat
+    let depth: CGFloat
 
     func path(in rect: CGRect) -> Path {
         var path = Path()
         let width = min(rect.width, rect.height)
         path.move(to: CGPoint(
-            x: deep,
+            x: depth,
             y: 0
         ))
         path.addLine(to: CGPoint(
@@ -49,10 +49,10 @@ struct CubeShape: Shape {
         ))
         path.addLine(to: CGPoint(
             x: width,
-            y: width - deep
+            y: width - depth
         ))
         path.addLine(to: CGPoint(
-            x: width - deep,
+            x: width - depth,
             y: width
         ))
         path.addLine(to: CGPoint(
@@ -61,27 +61,27 @@ struct CubeShape: Shape {
         ))
         path.addLine(to: CGPoint(
             x: 0,
-            y: deep
+            y: depth
         ))
         path.addLine(to: CGPoint(
-            x: deep,
+            x: depth,
             y: 0
         ))
         path.move(to: CGPoint(
             x: 0,
-            y: deep
+            y: depth
         ))
         path.addLine(to: CGPoint(
-            x: width - deep,
-            y: deep
+            x: width - depth,
+            y: depth
         ))
         path.addLine(to: CGPoint(
-            x: width - deep,
+            x: width - depth,
             y: width
         ))
         path.move(to: CGPoint(
-            x: width - deep,
-            y: deep
+            x: width - depth,
+            y: depth
         ))
         path.addLine(to: CGPoint(
             x: width,
