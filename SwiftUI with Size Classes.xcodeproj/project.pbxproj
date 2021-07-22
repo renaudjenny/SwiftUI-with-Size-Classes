@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C940E6723E571E500DCD4AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C940E6623E571E500DCD4AB /* AppDelegate.swift */; };
+		4C940E6723E571E500DCD4AB /* SizeClassesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C940E6623E571E500DCD4AB /* SizeClassesExampleApp.swift */; };
 		4C940E6923E571E500DCD4AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C940E6823E571E500DCD4AB /* SceneDelegate.swift */; };
 		4C940E6B23E571E500DCD4AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C940E6A23E571E500DCD4AB /* ContentView.swift */; };
 		4C940E6D23E571EC00DCD4AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C940E6C23E571EC00DCD4AB /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		4C940E6323E571E500DCD4AB /* SwiftUI with Size Classes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI with Size Classes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C940E6623E571E500DCD4AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C940E6623E571E500DCD4AB /* SizeClassesExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassesExampleApp.swift; sourceTree = "<group>"; };
 		4C940E6823E571E500DCD4AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4C940E6A23E571E500DCD4AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C940E6C23E571EC00DCD4AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		4C940E6523E571E500DCD4AB /* SwiftUI with Size Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4C940E6623E571E500DCD4AB /* AppDelegate.swift */,
+				4C940E6623E571E500DCD4AB /* SizeClassesExampleApp.swift */,
 				4C940E6C23E571EC00DCD4AB /* Assets.xcassets */,
 				4C940E6A23E571E500DCD4AB /* ContentView.swift */,
 				4CDB166E23E5B0EA002878C6 /* CubeView.swift */,
@@ -107,7 +107,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Renaud JENNY";
 				TargetAttributes = {
 					4C940E6223E571E500DCD4AB = {
@@ -151,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C940E6723E571E500DCD4AB /* AppDelegate.swift in Sources */,
+				4C940E6723E571E500DCD4AB /* SizeClassesExampleApp.swift in Sources */,
 				4C940E6923E571E500DCD4AB /* SceneDelegate.swift in Sources */,
 				4C940E6B23E571E500DCD4AB /* ContentView.swift in Sources */,
 				4CDB166F23E5B0EA002878C6 /* CubeView.swift in Sources */,
@@ -198,6 +198,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -222,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,6 +259,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -276,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,7 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI with Size Classes/Preview Content\"";
-				DEVELOPMENT_TEAM = MBQ98GC8JT;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI with Size Classes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,7 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI with Size Classes/Preview Content\"";
-				DEVELOPMENT_TEAM = MBQ98GC8JT;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI with Size Classes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
